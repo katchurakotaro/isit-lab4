@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="navigation" name="Navigation">
+    <mxGraphModel dx="3202" dy="887" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="login" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Авторизация" vertex="1">
+          <mxGeometry height="70" width="250" x="590" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Расписание" vertex="1">
+          <mxGeometry height="70" width="230" x="250" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="details" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Карточка занятия" vertex="1">
+          <mxGeometry height="70" width="260" x="210" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Мои записи" vertex="1">
+          <mxGeometry height="70" width="230" x="-130" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="membership" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Абонемент" vertex="1">
+          <mxGeometry height="70" width="230" x="410" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="trainer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Мое расписание (тренер)" vertex="1">
+          <mxGeometry height="80" width="280" x="640" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="participants" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Участники занятия" vertex="1">
+          <mxGeometry height="80" width="270" x="700" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="adminlist" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Админ: список занятий" vertex="1">
+          <mxGeometry height="80" width="300" x="980" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="adminedit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Админ: редактирование занятия" vertex="1">
+          <mxGeometry height="80" width="320" x="1030" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="login" style="endArrow=block;html=1;" target="schedule" value="клиент">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="login" style="endArrow=block;html=1;" target="trainer" value="тренер">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="login" style="endArrow=block;html=1;" target="adminlist" value="администратор">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="schedule" style="endArrow=block;html=1;" target="details" value="выбор занятия">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="details" style="endArrow=block;html=1;" target="bookings" value="после записи">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="schedule" style="endArrow=block;html=1;" target="bookings" value="меню">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="schedule" style="endArrow=block;html=1;" target="membership" value="меню">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="trainer" style="endArrow=block;html=1;" target="participants" value="открыть занятие">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="adminlist" style="endArrow=block;html=1;" target="adminedit" value="создать / изменить">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
